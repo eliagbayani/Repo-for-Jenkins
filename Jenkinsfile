@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'php --version'
-                php --version
+#                sh 'php --version'
+#                php --version
+                sh label: '', script: 'php --version'
             }
         }
     }
